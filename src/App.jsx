@@ -64,9 +64,9 @@ export default function App(){
 
     return(
       <>
-      {cards.map(card=>{
+      {cards.map((card,index)=>{
           return(
-            <Card title={card.title} amount={card.amount} icon={card.icon} variant={card.variant} type={card.type}></Card>
+            <Card key={index} title={card.title} amount={card.amount} icon={card.icon} variant={card.variant} type={card.type}></Card>
           )
       })}
               
